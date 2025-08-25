@@ -1,0 +1,73 @@
+:root {
+    --bg-color: #F1F1F1;
+    --color-danger: #FF0000;
+    --color-primary: #2196F3;
+    --color-success: #4CAF50;
+    --font-face: 'Arial', 'san-serif';
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font-face);
+    background-color: var(--bg-color);
+}
+
+
+#buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* buttons */
+
+.btn {
+    margin: 0 0.5rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+    font-size: 3rem;
+    cursor: pointer;
+    border: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+    opacity: 0.7;
+}
+
+
+.btn.btn-primary {
+    background-color: var(--color-primary);
+}
+
+.btn.btn-danger {
+    background-color: var(--color-danger);
+}
+
+.btn.btn-success {
+    background-color: var(--color-success);
+}
+
+.btn[id="reset"] {
+    margin: 10px 0;
+    font-size: 1.3rem;
+    color: var(--bg-color);
+}
+
+/* score */
+
+#your-score {
+    color: var(--color-primary);
+}
+
+#computer-score {
+    color: var(--color-danger);
+}
